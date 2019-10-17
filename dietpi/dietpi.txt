@@ -12,7 +12,7 @@
 # Locale: eg: "en_GB.UTF-8" / "de_DE.UTF-8" | One entry and UTF-8 ONLY!
 AUTO_SETUP_LOCALE=en_GB.UTF-8
 
-# Keyboard Layout eg: "gb" / "us" / "de" / "fr"
+# Keyboard Layout eg: "gb" / "us" / "de" / "be"
 AUTO_SETUP_KEYBOARD_LAYOUT=be
 
 # Timezone eg: "Europe/London" / "America/New_York" | Full list (TZ*): https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
