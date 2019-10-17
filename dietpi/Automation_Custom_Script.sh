@@ -7,11 +7,11 @@ sudo apt-get install tar -y
 sudo apt-get install unzip -y
 
 cd /home/dietpi
-wget https://github.com/t9999clint/WavePi/archive/master.zip
+wget https://github.com/DonZott/wpi/archive/master.zip
 #tar -xzf v0.8.0.tar.gz
 unzip master.zip
 #mv WavePi-0.8.0 WavePi
-mv WavePi-master WavePi
+mv wpi-master WavePi
 cd WavePi
 chmod +x ./install.sh
 sudo rm /etc/proftpd/proftpd.conf

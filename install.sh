@@ -67,6 +67,9 @@ then
     then
         echo "Raspberry PI 2 Detected!"
         sudo export CCFLAGS="-Ofast -mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -mvectorize-with-neon-quad -ftree-vectorize -funsafe-math-optimizations"
+        #export CCFLAGS="-Ofast -mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
+        #export CXXFLAGS="-Ofast -mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
+        
     elif [ "$PI_VERSION" == "3" ]
     then
         echo "Raspberry PI 3 Detected!"
@@ -75,6 +78,9 @@ then
     then
         echo "Raspberry PI 4 Detected!"
         sudo export CCFLAGS="-Ofast -mcpu=cortex-a72 -march=armv8-a+crc -mtune=cortex-a72 -mfpu=neon-fp-armv8 -mfloat-abi=hard -mvectorize-with-neon-quad -ftree-vectorize -funsafe-math-optimizations"
+        
+        #export CCFLAGS="-Ofast -mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
+        #export CXXFLAGS="-Ofast -mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
     
     ##If archetecture cannot be detected, and no manual setting was chosen, then it will alert the user and use safe optimizations.
     else
