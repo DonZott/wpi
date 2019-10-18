@@ -1,9 +1,6 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install wget -y
-sudo apt-get install nano -y
-sudo apt-get install tar -y
 sudo apt-get install unzip -y
 
 cd /home/dietpi
