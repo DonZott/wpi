@@ -83,6 +83,7 @@ then
         #export CCFLAGS="-Ofast -mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
         #export CXXFLAGS="-Ofast -mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
     
+    
     ##If archetecture cannot be detected, and no manual setting was chosen, then it will alert the user and use safe optimizations.
     else
         echo "!!Unable to detect hardware, using safe defaults!!"

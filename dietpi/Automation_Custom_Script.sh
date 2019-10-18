@@ -13,10 +13,12 @@ unzip master.zip
 #mv WavePi-0.8.0 WavePi
 mv wpi-master WavePi
 cd WavePi
+
 chmod +x ./install.sh
 sudo rm /etc/proftpd/proftpd.conf
 sudo cp /home/dietpi/WavePi/dietpi/proftpd.conf /etc/proftpd/proftpd.conf
 service proftpd restart
+sudo usermod -a -G audio dietpi
+sudo usermod -a -G i2c dietpi
 ./install.sh
-
-echo "DietPi autoconfiguration is finished, please reboot"
+sudo chown -R dietpi /home/dietpi/WavePi
